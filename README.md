@@ -1,17 +1,44 @@
 # ⭐ Disposable Chatroom Project - Team 74 ⭐
 
-Our team, Team 74, developed a disposable chatroom using Svelte and the GunDB library. Users can enter a room name and a username to join a chat room. Within the chat room, users can send messages, delete messages, and, at the end, any user can dispose of the room by clicking the delete button.
+Our team, Team 74, proudly presents a disposable chatroom application, built using Svelte and the GunDB library.
 
-## See our chat app preview at 🪼 [CraftChat on Vercel](https://craftchat-seven.vercel.app/)
+## ✨ Features
 
-## This project was made by our team for [DevStar](https://github.com/nav9v/devstar)
+* **Easy Access:** Users can quickly join a chat room by simply entering a room name and a username.
+* **Real-time Messaging:** Enjoy seamless and instant communication with other users in the chat room.
+* **Message Management:** Users have the ability to delete their own messages.
+* **Disposable Rooms:** At the end of a chat session, any user can effortlessly dispose of the room with a single click.
 
-## Developing
+## 🚀 Live Demo
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Experience our chat app in action:
 
-```bash
-npm run dev
+### 🪼 **[CraftChat on Vercel](https://craftchat-seven.vercel.app/)**
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+## 🛠️ Built for DevStar
+
+This project was crafted with passion for the DevStar Project:
+
+**[DevStar on GitHub](https://github.com/nav9v/devstar)**
+
+## 💻 Get Started with Development
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/nav9v/craftchat
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   To automatically open the app in a new browser tab, use:
+   ```bash
+   npm run dev -- --open
+   ```
+
