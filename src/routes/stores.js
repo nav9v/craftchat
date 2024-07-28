@@ -19,7 +19,7 @@ function localStorageStore({ storageKey, initialValue = "" }) {
 
 export const nav = localStorageStore({
   storageKey: "chat_nav",
-  initialValue: "messages",
+  initialValue: "settings",
 });
 
 export const chatTopic = localStorageStore({
