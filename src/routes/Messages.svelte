@@ -111,7 +111,9 @@
     gun.get($chatTopic).off();
   });
 </script>
+<div class="button-container">
 <button on:click={deleteChatPage}>Delete Chat Page</button>
+</div>
 <main bind:this={main} on:scroll={handleScroll}>
   {#if isLoading}
     <Spinner />
@@ -143,15 +145,19 @@
     padding: 0.5em 1em 0.5em 1em;
     overflow-y: auto;
   }
-  button{
-    position: relative;
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  button {
     width: fit-content;
     background-color: red;
     color: white;
-    border-radius: 0.5em;
-    padding: 0.5em;
-    margin: 0.5em 0;
-    right: 0.5em;
+    border-radius: 0.8em;
+    padding: 0.3em;
   }
   button:hover{
     background-color: black;
