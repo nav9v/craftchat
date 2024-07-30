@@ -112,7 +112,7 @@
   });
 </script>
 <div class="button-container">
-<button on:click={deleteChatPage}>Delete Chat Page</button>
+<button on:click={deleteChatPage}>Delete all🗑️</button>
 </div>
 <main bind:this={main} on:scroll={handleScroll}>
   {#if isLoading}
@@ -154,12 +154,13 @@
   }
   button {
     width: fit-content;
-    background-color: red;
+    background-color: #F5BF03;
     color: white;
     border-radius: 0.8em;
     padding: 0.3em;
   }
   button:hover{
-    background-color: black;
+    background-color: #d7ad22;
   }
+
 </style>

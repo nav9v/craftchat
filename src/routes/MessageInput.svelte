@@ -47,4 +47,8 @@
     background-color: white;
     padding: 0.25em 1em;
   }
+  :global(.dark-mode) form {
+    background-color: #333;
+    color: white;
+  }
 </style>

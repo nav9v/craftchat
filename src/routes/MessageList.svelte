@@ -77,18 +77,17 @@
     position: relative;
     line-height: 1.8;
     padding: 0.4em 1em;
-    background-color: #eee;
+    background-color: #ffffff;
     border-radius: 1em 1em 1em 0;
-
     white-space: pre-wrap;
 
-  
     overflow-wrap: break-word;
     word-wrap: break-word;
 
     -ms-word-break: break-all;
     word-break: break-all;
     word-break: break-word;
+    color: rgb(0, 0, 0);
   }
 
   .user {
@@ -97,8 +96,8 @@
 
   .user > .msg {
     margin-left: 4em;
-    background-color: #0074d9;
-    color: white;
+    background-color: #d6b025;
+    color: rgb(0, 0, 0);
     border-radius: 1em 1em 0 1em;
   }
 
@@ -120,4 +119,5 @@
     text-indent: -9999px;
     cursor: pointer;
   }
+
 </style>

@@ -1,5 +1,6 @@
 <script>
   import { fade } from "svelte/transition";
+
 </script>
 
 <div class="animation" in:fade out:fade>
@@ -21,5 +22,9 @@
     flex-direction: column;
     max-width: 640px;
     background-color: white;
+  }
+  :global(.dark-mode) .container {
+    background-color: #333;
+    color: white;
   }
 </style>

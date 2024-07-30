@@ -90,7 +90,7 @@
 
   .input:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 116, 217, 0.5);
+    box-shadow: 0 0 0 2px rgba(238, 214, 55, 0.772);
   }
 
   .submit {
@@ -103,8 +103,9 @@
     background-size: 0.75em;
     border: none;
     border-radius: 50%;
-    background-color: #0074d9;
+    background-color: #f16b0c;
     text-indent: -9999px;
     cursor: pointer;
   }
+
 </style>

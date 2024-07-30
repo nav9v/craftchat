@@ -32,4 +32,8 @@
     background-color: #555555;
     opacity: 0.9;
   }
+  :global(.dark-mode) button {
+    background-color: #333333;
+    color: #ffffff;
+  }
 </style>
