@@ -1,11 +1,11 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 	import { darkMode, toggleDarkMode } from '../stores.js';
-  $: icon = $darkMode ? '🌞' : '🌝';
+	$: icon = $darkMode ? '🌞' : '🌝';
 
 	export let showBack = false;
 	export let backText = null;
-	export let showSignIn = false; 
+	export let showSignIn = false;
 	const dispatch = createEventDispatcher();
 </script>
 
@@ -25,7 +25,6 @@
 		</button>
 	{:else}
 		<div class="placeholder"></div>
-		<!-- Add a placeholder div here -->
 	{/if}
 	<h1>
 		<slot />
@@ -34,7 +33,6 @@
 		<button class="sign-in-button"> Sign In </button>
 	{:else}
 		<div class="placeholder"></div>
-		<!-- Add a placeholder div here -->
 	{/if}
 	<button class="dark-mode-b" on:click={toggleDarkMode}>{icon}</button>
 </nav>
@@ -83,7 +81,7 @@
 		background-color: transparent;
 		cursor: pointer;
 		margin-right: 1em;
-    font-size: 20px;
+		font-size: 20px;
 	}
 
 	.dark-mode-b:hover {

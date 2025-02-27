@@ -1,3 +1,3 @@
 <div class="centered">
-  <div class="loadingspinner" />
+	<div class="loadingspinner" />
 </div>
