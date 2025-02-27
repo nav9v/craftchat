@@ -7,8 +7,8 @@
   export let placeholder = null;
   export let value = "";
   export let name = null;
-  export let maxLength = 160;
-  export let maxRows = 1;
+  export let maxLength = 5000; // Increased from 160 to 5000
+  export let maxRows = 8;  
   export let disabled = false;
   export let multiline = false;
 
@@ -78,8 +78,11 @@
     padding: 0.6em 2em 0.6em 0.6em;
     border-radius: 1em;
     width: 100%;
-    resize: none;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 2.5em;
+    max-height: 200px;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .input:disabled {

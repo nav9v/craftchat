@@ -6,6 +6,7 @@
   import MessageInput from "./MessageInput.svelte";
   import MessageList from "./MessageList.svelte";
   import Spinner from "./ui/Spinner.svelte";
+  import { getMessageSizeInBytes, formatBytes } from "./utils/messageUtils.js";
 
   const ADD_ON_SCROLL = 50; // messages to add when scrolling to the top
   let showMessages = 100; // initial messages to load
@@ -17,6 +18,7 @@
   let main;
   let isLoading = false;
   let timeout;
+  let totalBytesUsed = 0;
 
   $: {
     isLoading = true;
@@ -64,14 +66,18 @@
     }
   }
 
+  // Check if messages are getting too large
   function handleNewMessage(msg) {
     const now = new Date().getTime();
     const msgId = Gun.text.random();
     const message = { msg, user: $user, time: now };
+    
     gun
       .get($chatTopic)
       .get(msgId)
       .put(message);
+      
+    updateTotalSize();
   }
 
   function handleDelete(msgId) {
@@ -79,6 +85,12 @@
       .get($chatTopic)
       .get(msgId)
       .put(null);
+  }
+
+  function updateTotalSize() {
+    totalBytesUsed = Object.values(store).reduce((total, chat) => {
+      return total + getMessageSizeInBytes(chat.msg || '');
+    }, 0);
   }
 
   onMount(async () => {
@@ -94,6 +106,7 @@
           // reassign store to trigger svelte's reactivity
           store = store;
         }
+        updateTotalSize();
       });
   });
 
@@ -113,6 +126,7 @@
 </script>
 <div class="button-container">
 <button on:click={deleteChatPage}>Delete all🗑️</button>
+<span class="data-usage">Data: {formatBytes(totalBytesUsed)}</span>
 </div>
 <main bind:this={main} on:scroll={handleScroll}>
   {#if isLoading}
@@ -124,7 +138,6 @@
       handleDelete(e.detail);
     }}
   />
-
 </main>
 
 <MessageInput
@@ -161,6 +174,15 @@
   }
   button:hover{
     background-color: #d7ad22;
+  }
+  .data-usage {
+    margin-left: 1em;
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  :global(.dark-mode) .data-usage {
+    color: #aaa;
   }
 
 </style>

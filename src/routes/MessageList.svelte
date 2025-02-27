@@ -80,7 +80,7 @@
     background-color: #ffffff;
     border-radius: 1em 1em 1em 0;
     white-space: pre-wrap;
-
+    max-width: 85%;
     overflow-wrap: break-word;
     word-wrap: break-word;
 
