@@ -15,7 +15,7 @@ Our team, Team 74, proudly presents a disposable chatroom application, built usi
 
 Experience our chat app in action:
 
-### 🪼 **[CraftChat on Vercel](https://craftchat-seven.vercel.app/)**
+### 🪼 **[CraftChat on Vercel](https://craft-chat.vercel.app/)**
 
 ## 🛠️ Built for DevStar
 
