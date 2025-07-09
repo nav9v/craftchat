@@ -1,5 +1,7 @@
 # ⭐ Disposable Chatroom Project - Team 74 ⭐
 
+<img  alt="craftchat" src="https://github.com/user-attachments/assets/32b5eeb2-c0e3-48ee-b660-1df5fbd4900f" />
+
 Our team, Team 74, proudly presents a disposable chatroom application, built using Svelte and the GunDB library.
 
 ## ✨ Features
@@ -13,7 +15,7 @@ Our team, Team 74, proudly presents a disposable chatroom application, built usi
 
 Experience our chat app in action:
 
-### 🪼 **[CraftChat on Vercel](https://craftchat-seven.vercel.app/)**
+### 🪼 **[CraftChat on Vercel](https://craft-chat.vercel.app/)**
 
 ## 🛠️ Built for DevStar
 
