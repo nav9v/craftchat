@@ -9,11 +9,11 @@ if (process.env.NODE_ENV === "development") {
 
   peers = [
     // Community relay peers: https://github.com/amark/gun/wiki/volunteer.dht
-    "https://peer.wallie.io/gun",
     "https://a.talkflow.team/gun",
     "https://gun.defucc.me/gun",
     "https://talkflow.team/gun",
     "https://gun-manhattan.herokuapp.com/gun",
+    "https://peer.wallie.io/gun",
     "https://gundb-relay-mlccl.ondigitalocean.app/gun",
     "https://plankton-app-6qfp3.ondigitalocean.app/",
   ];
